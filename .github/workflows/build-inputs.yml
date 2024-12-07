@@ -57,7 +57,7 @@ on:
       kconfig:
         description: 'kconfig'
         required: false
-        default: 'CONFIG_ZMK_DISPLAY=y\nZMK_WIDGET_BATTERY_STATUS=y\nCONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y\nCONFIG_ZMK_KEYBOARD_NAME="TippyTappy"'
+        default: 'CONFIG_ZMK_DISPLAY=y\nCONFIG_ZMK_KEYBOARD_NAME="TippyTappy"'
       branches:
         description: 'branches'
         required: false
