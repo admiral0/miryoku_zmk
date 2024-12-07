@@ -7,15 +7,16 @@ on:
     inputs:
       board:
         description: 'board'
+        default: 'nice_nano_v2'
         required: true
       shield:
         description: 'shield'
         required: false
-        default: 'default'
+        default: 'corne_left nice_view_adapter nice_view,corne_right nice_view_adapter nice_view'
       alphas:
         description: 'alphas'
         required: false
-        default: 'default'
+        default: 'QWERTY'
         type: choice
         options:
         - "default"
@@ -56,7 +57,10 @@ on:
       kconfig:
         description: 'kconfig'
         required: false
-        default: 'default'
+        default: |
+          CONFIG_ZMK_DISPLAY=y
+          CONFIG_ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE=y
+          CONFIG_ZMK_KEYBOARD_NAME="TippyTappy"
       branches:
         description: 'branches'
         required: false
